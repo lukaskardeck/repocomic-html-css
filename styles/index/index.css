@@ -4,34 +4,43 @@
     box-sizing: border-box;
 }
 
+:root {
+    --cor-principal: #242643;
+    --cor-secundaria: #3d4069;
+    --cor-terciaria: #1c1c1c;
+    --cor-destaque: #fa6632;
+    --cor-texto: #F1F1F1;
+}
+
 body {
-    background-color: #242643;
-    color: #fff;
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
     font-family: "Red Hat Text", sans-serif;
 }
 
-/*
-
-    CABEÇALHO
-
+/* 
+    =========================
+        CABEÇALHO 
+    =========================
 */
-
 header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--cor-principal);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid var(--cor-terciaria);
+
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
     padding: 20px 40px;
     width: 100%;
-    /* margin-bottom: 40px; */
 }
-
-/* header img {
-    width: 150px;
-} */
 
 .logo_repocomics {
     font-family: "Sansation", sans-serif;
-    color: #fff;
+    color: var(--cor-texto);
     font-weight: bold;
 }
 
@@ -45,12 +54,11 @@ header nav ul {
     list-style: none;
     text-align: center;
     justify-items: right;
-    /* background-color: burlywood; */
 }
 
 header nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: var(--cor-texto);
     font-size: 16px;
     position: relative;
 }
@@ -59,7 +67,7 @@ header nav ul li a::after {
     content: '';
     width: 0%;
     height: 3px;
-    background-color: #fa6632;
+    background-color: var(--cor-destaque);
     position: absolute;
     bottom: -2px;
     left: 0;
@@ -70,17 +78,15 @@ header nav ul li a:hover:after {
     width: 120%;
 }
 
-/*
-
-    SEÇÃO INICIAL - APRESENTAÇÃO DO SITE
-
+/* 
+    =========================
+        SEÇÃO INICIAL 
+    =========================
 */
-
 .container_initial {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 16px;
-    /* background-color: yellowgreen; */
     padding: 40px;
     margin-bottom: 40px;
 }
@@ -95,7 +101,6 @@ header nav ul li a:hover:after {
 }
 
 .container_initial section.introduction .btns {
-    /* background-color: brown; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
@@ -104,22 +109,20 @@ header nav ul li a:hover:after {
 
 .container_initial section.introduction .btn_publisher {
     height: 50%;
-    box-shadow: 2px 2px 8px #fa67322d;
-    background-color: transparent;
-    border: 2px solid #fa6632;
-    color: #fff;
+    font-size: 14px;
+    background-color: var(--cor-destaque);
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    color: var(--cor-texto);
     cursor: pointer;
     border-radius: 4px;
     transition: all 0.3s ease;
-    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); */
     position: relative;
 }
 
 .container_initial section.introduction .btn_publisher:hover {
     transform: translateY(-2px);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    background-color: #fa6632;
-    border: none;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
 }
 
 .container_initial section.introduction .btn_publisher:active {
@@ -127,11 +130,10 @@ header nav ul li a:hover:after {
 }
 
 .container_initial section.imgs_profile_person {
-    /* background-color: yellowgreen; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: right;
-    justify-content: right; /* Centraliza a grid horizontalmente */
+    justify-content: right;
     gap: 16px;
 }
 
@@ -142,14 +144,13 @@ header nav ul li a:hover:after {
     border-radius: 8px;
 }
 
-/*
-
-    SEGUNDA SEÇÃO - PERSONAGENS PREDILETOS
-
+/* 
+    =========================
+        SEGUNDA SEÇÃO - PERSONAGENS PREDILETOS 
+    =========================
 */
-
 .container_fav_characters {
-    background-color: #fa6632;
+    background-color: var(--cor-secundaria);
     padding: 40px;
     padding-bottom: 80px;
 }
@@ -162,7 +163,6 @@ header nav ul li a:hover:after {
 .container_fav_characters .fav_characters {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* background-color: #242643; */
     justify-items: center;
     gap: 8px;
 }
@@ -173,14 +173,13 @@ header nav ul li a:hover:after {
     background-color: antiquewhite;
 }
 
-/*
 
-    TERCEIRA SEÇÃO - QUADRINHOS RECOMENDADOS
-
+/* 
+    =========================
+        TERCEIRA SEÇÃO - QUADRINHOS
+    =========================
 */
-
 .container_quadrinhos {
-    /* background-color: yellow; */
     padding: 40px;
     padding-bottom: 80px;
 }
@@ -193,7 +192,6 @@ header nav ul li a:hover:after {
 .container_quadrinhos .lista_quadrinhos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* background-color: #242643; */
     justify-items: center;
     gap: 8px;
 }
@@ -204,24 +202,27 @@ header nav ul li a:hover:after {
     background-color: antiquewhite;
 }
 
-/*
 
-    FOOTER
-
+/* 
+    =========================
+        RODAPÉ 
+    =========================
 */
-
 footer {
-    background-color: #1c1c1c;
-    color: #f0f0f0;
+    background-color: var(--cor-terciaria);
+    color: #dcdcdc;
     padding: 20px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer a {
+    color: var(--cor-destaque);
+    text-decoration: none;
 }
 
 .footer-top {
     display: flex;
     justify-content: center;
     gap: 64px;
-    /* background-color: #1e90ff; */
 }
 
 .footer-section {
@@ -230,34 +231,7 @@ footer {
 
 .footer-section h3 {
     margin-bottom: 15px;
-    font-size: 1.2rem;
-    color: #fa6632;
-}
-
-.footer-section p,
-.footer-section a,
-.footer-bottom p {
-    font-size: 0.95rem;
-    color: #dcdcdc;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section li {
-    margin-bottom: 8px;
-}
-
-.footer-section a {
-    color: #1e90ff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.footer-section a:hover {
-    color: #fa6632;
+    color: var(--cor-destaque);
 }
 
 .footer-bottom {
