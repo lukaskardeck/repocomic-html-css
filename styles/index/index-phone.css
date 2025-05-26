@@ -1,0 +1,173 @@
+@media (max-width: 600px) {
+    /* 
+        =========================
+            CABEÇALHO
+        =========================
+    */
+    header {
+        position: static;
+        padding: 4vw 2vw;
+    }
+
+    header p.logo_repocomics {
+        font-size: 5vw;
+        padding-bottom: 2vw;
+    }
+
+    header nav ul {
+        grid-template-columns: 1fr 1fr;
+        gap: 3vw;
+    }
+
+    header nav ul li a {
+        font-size: 4.5vw;
+    }
+
+    header nav ul li a::after {
+        height: 0.8vw;
+    }
+
+    /* 
+        =========================
+            SEÇÃO INICIAL 
+        =========================
+    */
+
+    .container_initial {
+        grid-template-columns: 1fr;
+        padding: 3.5vw;
+        margin-top: 4.5vw;
+        margin-bottom: 8vw;
+    }
+
+    .container_initial section.introduction {
+        gap: 6vw;
+    }
+
+    .container_initial section.introduction h1 {
+        font-size: 8vw;
+    }
+
+    .container_initial section.introduction p {
+        font-size: 3.5vw;
+    }
+
+    .container_initial section.introduction .btns {
+        gap: 3.5vw;
+    }
+
+    .container_initial section.introduction .btn_publisher {
+        height: 10vw;
+        font-size: 4vw;
+        padding: 0 2vw;
+    }
+
+    .container_initial section.imgs_profile_person {
+        display: none;
+    }
+
+    /* 
+        =========================
+            SEÇÕES EM GERAL
+        =========================
+    */
+
+    .section_comics {
+        padding: 5vw;
+    }
+
+    .section_comics h2 {
+        font-size: 6vw;
+        margin-bottom: 4.5vw;
+    }
+
+    /* 
+        =========================
+            SEGUNDA SEÇÃO: PERSONAGENS
+        =========================
+    */
+    .section_comics .list_characters {
+        grid-template-columns: 1fr;
+        gap: 5vw;
+    }
+
+    .section_comics .list_characters .character {
+        width: 90%;
+    }
+
+    .section_comics .list_characters .character .character_img {
+        height: auto;
+        aspect-ratio: 4/3;
+        width: 100%;
+    }
+
+    .section_comics .list_characters .character .character_name {
+        padding: 3vw;
+        font-size: 4vw;
+    }
+
+    /* 
+        =========================
+            TERCEIRA SEÇÃO: QUADRINHOS
+        =========================
+    */
+    .section_comics .list_comics {
+        grid-template-columns: 1fr;
+        gap: 5vw;
+    }
+
+    .section_comics .list_comics .comic {
+        width: 70%;
+    }
+
+    .section_comics .list_comics .comic .comic_img {
+        aspect-ratio: 2 / 3;
+        width: 100%;
+        background-color: antiquewhite;
+    }
+
+    .section_comics .list_comics .comic .comic_description {
+        padding: 4vw 0;
+        font-size: 4.5vw;
+    }
+
+    .section_comics .list_comics .comic .comic_description .comic_year {
+        font-size: 3vw;
+    }
+
+    /* 
+        =========================
+            RODAPÉ 
+        =========================
+    */
+    footer {
+        padding: 4vw;
+    }
+
+    .footer-top {
+        gap: 5vw;
+        justify-content: space-between;
+    }
+
+    .footer-section {
+        width: 40vw;
+    }
+
+    .footer-section h3 {
+        margin-bottom: 3vw;
+        font-size: 4vw;
+    }
+
+    .footer-bottom {
+        margin-top: 8vw;
+        border-top: 1px solid #444;
+        padding-top: 3vw;
+        font-size: 1vw;
+        color: #aaa;
+    }
+
+    footer p,
+    footer a {
+        font-size: 3vw;
+    }
+}
