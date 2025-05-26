@@ -110,15 +110,19 @@ header nav ul li a:hover:after {
 
 .container_initial section.introduction .btn_publisher {
     height: 64px;
-    font-size: 14px;
     background-color: var(--cor-destaque);
     border: none;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    color: var(--cor-texto);
     cursor: pointer;
     border-radius: 4px;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     position: relative;
+}
+
+.container_initial section.introduction .btn_publisher a {
+    color: var(--cor-texto);
+    font-size: 14px;
+    text-decoration: none;
 }
 
 .container_initial section.introduction .btn_publisher:hover {
@@ -128,6 +132,14 @@ header nav ul li a:hover:after {
 
 .container_initial section.introduction .btn_publisher:active {
     transform: scale(1);
+}
+
+.container_initial section.introduction .btn_marvel:hover {
+    background-color: #b3001b;
+}
+
+.container_initial section.introduction .btn_dc_comics:hover {
+    background-color: #0050b3;
 }
 
 .container_initial section.imgs_profile_person {

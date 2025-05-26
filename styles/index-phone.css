@@ -58,8 +58,11 @@
 
     .container_initial section.introduction .btn_publisher {
         height: 10vw;
-        font-size: 4vw;
         padding: 0 2vw;
+    }
+
+    .container_initial section.introduction .btn_publisher a {
+        font-size: 4vw;
     }
 
     .container_initial section.imgs_profile_person {

@@ -37,6 +37,9 @@
 
     .container_initial section.introduction .btn_publisher {
         height: 48px;
+    }
+
+    .container_initial section.introduction .btn_publisher a {
         font-size: 12px;
     }
 
