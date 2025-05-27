@@ -9,13 +9,15 @@
     --cor-secundaria: #3d4069;
     --cor-terciaria: #1c1c1c;
     --cor-destaque: #fa6632;
-    --cor-texto: #F1F1F1;
+    --cor-texto: #f1f1f1;
+
+    --fonte-texto: "Red Hat Text", sans-serif;
 }
 
 body {
     background-color: var(--cor-principal);
     color: var(--cor-texto);
-    font-family: "Red Hat Text", sans-serif;
+    font-family: var(--fonte-texto);
 }
 
 /* 
