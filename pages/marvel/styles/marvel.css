@@ -158,80 +158,85 @@ main .introduction_marvel p strong {
 
 /*
     =========================
-        SEÇÕES: PERSONAGENS, EQUIPES, QUADRINHOS
+        SEÇÕES: PERSONAGENS
     =========================
 */
-.section_comics {
-    padding: 48px 20px;
-    margin: auto;
-    text-align: center;
-}
 
-.section_comics h2 {
-    font-size: 2rem;
-    margin-bottom: 32px;
-}
-
-/* Grade de cards */
-.list_characters {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px 12px;
-    justify-items: center;
-}
-
-/* Cada card de personagem/equipe/quadrinho */
 .character {
-    background-color: var(--cor-secundaria);
-    border-radius: 8px;
-    padding: 12px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    width: 100%;
-    max-width: 200px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  background-color: var(--cor-secundaria);
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
 }
 
 .character:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-    background-color: var(--cor-destaque);
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: var(--cor-destaque);
 }
 
-/* Imagem com proporção vertical comum de capa */
 .character_img {
-    width: 100%;
-    aspect-ratio: 2 / 3;
-    background-color: #eee;
-    background-size: cover;
-    background-position: center;
-    border-radius: 4px;
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  background-color: #eee;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
 }
 
-/* Nome do personagem/equipe */
 .character p {
-    font-weight: bold;
+  font-weight: bold;
 }
+
+/* SEÇÕES */
+.section_comics {
+  padding: 48px 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.section_comics h2 {
+  font-size: 2rem;
+  margin-bottom: 32px;
+}
+
+/* Grade dos cards */
+.list_characters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px 12px;
+  justify-items: center;
+}
+
+
 
 /*
     =========================
-        SEÇÃO: EQUIPE
+        SEÇÕES: EQUIPES
     =========================
 */
 .equipes {
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-    gap: 20px 12px;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px 12px;
 }
 
 .equipe {
-    max-width: 370px;
+  max-width: 370px;
 }
 
 .equipe_img {
-    aspect-ratio: 4/3;
+  aspect-ratio: 4/3;
 }
+
 
 /* 
     =========================
