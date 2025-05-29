@@ -45,7 +45,7 @@
         height: 220px;
     }
 
-    .intro_personagem p {
+    .intro_personagem > p {
         font-size: 1.1rem;
         line-height: 1.6;
     }

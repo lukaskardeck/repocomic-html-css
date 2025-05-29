@@ -165,17 +165,17 @@
         gap: 5vw;
     }
 
-    .section_comics .list_characters .character {
+    .section_comics .list_characters a.character {
         width: 90%;
     }
 
-    .section_comics .list_characters .character .character_img {
+    .section_comics .list_characters a.character .character_img {
         height: auto;
         aspect-ratio: 4/3;
         width: 100%;
     }
 
-    .section_comics .list_characters .character .character_name {
+    .section_comics .list_characters a.character .character_name {
         padding: 3vw;
         font-size: 4vw;
     }
@@ -190,22 +190,22 @@
         gap: 5vw;
     }
 
-    .section_comics .list_comics .comic {
+    .section_comics .list_comics a.comic {
         width: 70%;
     }
 
-    .section_comics .list_comics .comic .comic_img {
+    .section_comics .list_comics a.comic .comic_img {
         aspect-ratio: 2 / 3;
         width: 100%;
         background-color: antiquewhite;
     }
 
-    .section_comics .list_comics .comic .comic_description {
+    .section_comics .list_comics a.comic .comic_description {
         padding: 4vw 0;
         font-size: 4.5vw;
     }
 
-    .section_comics .list_comics .comic .comic_description .comic_year {
+    .section_comics .list_comics a.comic .comic_description .comic_year {
         font-size: 3vw;
     }
 

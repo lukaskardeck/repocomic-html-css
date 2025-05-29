@@ -154,9 +154,48 @@ header nav ul li span.ativo::after {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-.intro_personagem p {
-    font-size: 1.2rem;
-    line-height: 1.6;
+/* Botão de favoritar - container */
+.add-favorite {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 24px;
+}
+
+/* Botão em si */
+.favorite-btn {
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.favorite-btn svg {
+    width: 20px;
+    height: 20px;
+    stroke: var(--cor-texto);
+    stroke-width: 1px;
+    transition: transform 0.2s ease;
+}
+
+
+.add-favorite:hover {
+    cursor: pointer;
+    color: var(--cor-destaque);
+}
+
+.add-favorite:hover .favorite-btn svg {
+    transform: scale(1.05);
+    stroke: var(--cor-destaque);
+}
+
+
+.intro_personagem > p {
+    font-size: 18px;
+    text-align: justify;
+    text-indent: 3em;
+    line-height: 2em;
 }
 
 /* 

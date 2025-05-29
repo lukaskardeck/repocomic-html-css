@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="./styles/spider-man.css" />
         <link rel="stylesheet" href="./styles/spider-man-tablet.css" />
         <link rel="stylesheet" href="./styles/spider-man-phone.css" />
-        <title>Spider-Man | REPOCOMICS</title>
+        <title>Homem-Aranha | REPOCOMICS</title>
     </head>
     <body>
         <!-- CABEÇALHO -->
@@ -46,11 +46,37 @@
             <!-- 1. Apresentação do personagem -->
             <section class="intro_personagem">
                 <div class="profile_character">
-                    <div 
+                    <div
                         class="profile_img"
-                        style="background-image: url('../../../../assets/images/spiderman.png');"
+                        style="
+                            background-image: url('../../../../assets/images/spiderman.png');
+                        "
                     ></div>
                     <h1>Homem-Aranha</h1>
+                </div>
+                <div class="add-favorite">
+                    <button
+                        class="favorite-btn"
+                        aria-label="Favoritar personagem"
+                        title="Favoritar"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                            ></polygon>
+                        </svg>
+                    </button>
+                    <p>Adicionar aos favoritos</p>
                 </div>
                 <p>
                     Criado por Stan Lee e Steve Ditko em 1962, o Homem-Aranha é
@@ -62,7 +88,7 @@
                 </p>
             </section>
 
-            <hr>
+            <hr />
 
             <!-- 2. Lista de HQs em formato de tabela -->
             <section class="hqs_personagem">
@@ -150,7 +176,7 @@
                 </div>
             </section>
 
-            <hr>
+            <hr />
 
             <!-- 3. Momentos marcantes e curiosidades -->
             <section class="moments_section">
@@ -212,7 +238,7 @@
                 </div>
             </section>
 
-            <hr>
+            <hr />
 
             <!-- 3. Formulário de sugestão -->
             <section class="sugestao_hq">
@@ -224,7 +250,7 @@
                     <label for="mensagem"
                         >Nos diga por que ela é importante:</label
                     >
-                    <textarea id="mensagem" name="mensagem" rows="4" ></textarea>
+                    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
 
                     <button type="submit">Enviar sugestão</button>
                 </form>

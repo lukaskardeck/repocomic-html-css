@@ -1,5 +1,5 @@
 @media (max-width: 600px) {
-   /* 
+    /* 
         =========================
             CABEÇALHO
         =========================
@@ -12,6 +12,7 @@
 
     header p.logo_repocomics {
         padding-bottom: 2vw;
+        font-size: 5vw;
     }
 
     header p.logo_repocomics a {
@@ -146,7 +147,23 @@
         box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     }
 
-    .intro_personagem p {
+    .add-favorite {
+        gap: 1vw;
+        margin-bottom: 5vw;
+    }
+
+    .favorite-btn svg {
+        width: 4vw;
+        height: 4vw;
+        stroke-width: 0.2vw;
+    }
+
+    /* Texto abaixo do botão */
+    .add-favorite > p {
+        font-size: 3vw;
+    }
+
+    .intro_personagem > p {
         font-size: 5vw;
     }
 

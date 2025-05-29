@@ -1,0 +1,87 @@
+@media (max-width: 900px) {
+    /* 
+        =========================
+            CABEÇALHO
+        =========================
+    */
+
+    header {
+        grid-template-columns: 1fr;
+    }
+
+    header p.logo_repocomics {
+        font-size: 24px;
+        text-align: center;
+        padding-bottom: 24px;
+    }
+
+    header nav ul {
+        justify-items: center;
+    }
+
+    /* 
+    =========================
+        ESTRUTURA PRINCIPAL
+    =========================
+*/
+
+    /* Estrutura geral */
+    .page_team {
+        padding: 40px 0px;
+        width: 95%;
+    }
+
+    .page_team h2 {
+        font-size: 2em;
+    }
+
+    /* Seção de introdução */
+    h1 {
+        font-size: 2.6em;
+    }
+
+    .profile_img {
+        height: 350px;
+    }
+
+    .intro_team > p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    /* 
+    =========================
+        SEÇÃO DA TABELA DOS QUADRINHOS
+    =========================
+*/
+    .hqs_personagem .hq_capa {
+        width: 110px;
+        height: 165px;
+        background-color: #fff;
+        background-size: cover;
+        background-position: center;
+        border-radius: 4px;
+    }
+
+    /* 
+    =========================
+        FORMULÁRIO DE SUGESTÃO 
+    =========================
+*/
+    .sugestao_hq {
+        width: 100%;
+    }
+
+    /* 
+        =========================
+            RODAPÉ
+        =========================
+    */
+    footer h3 {
+        font-size: 16px;
+    }
+    footer p,
+    footer a {
+        font-size: 12px;
+    }
+}
