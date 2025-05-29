@@ -122,6 +122,9 @@ header nav ul li a:hover:after {
 }
 
 .container_initial section.introduction .btn_publisher {
+    display: flex; /* ou inline-block */
+    justify-content: center;
+    align-items: center;
     height: 64px;
     background-color: var(--cor-destaque);
     border: none;
@@ -129,13 +132,10 @@ header nav ul li a:hover:after {
     cursor: pointer;
     border-radius: 4px;
     transition: all 0.2s ease;
-    position: relative;
-}
-
-.container_initial section.introduction .btn_publisher a {
     color: var(--cor-texto);
     font-size: 14px;
     text-decoration: none;
+    text-align: center;
 }
 
 .container_initial section.introduction .btn_publisher:hover {
