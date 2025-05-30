@@ -4,6 +4,7 @@
             CABEÇALHO
         =========================
     */
+
     header {
         /* position: relative; */
         padding: 3vw 2vw;
@@ -11,6 +12,9 @@
 
     header p.logo_repocomics {
         padding-bottom: 2vw;
+    }
+
+    header p.logo_repocomics a {
         font-size: 5vw;
     }
 
@@ -101,113 +105,190 @@
         display: flex;
     }
 
-    /* 
-        =========================
-            SEÇÃO INICIAL 
-        =========================
-    */
+    /*
+    =========================
+        SEÇÕES EM GERAL
+    =========================
+*/
 
-    .container_initial {
-        grid-template-columns: 1fr;
-        padding: 3.5vw;
-        margin-top: 4.5vw;
-        margin-bottom: 8vw;
+    section {
+        padding: 5vw 3vw;
     }
 
-    .container_initial section.introduction {
-        gap: 6vw;
+    h2 {
+        font-size: 5vw;
+        margin-bottom: 2vw;
     }
 
-    .container_initial section.introduction h1 {
-        font-size: 8vw;
+    /*
+    =========================
+        FILTRO DE SELEÇÃO
+    =========================
+*/
+
+    .filtros-favoritos {
+        margin-bottom: 1vw;
     }
 
-    .container_initial section.introduction p {
-        font-size: 3.5vw;
+    .filtros-favoritos fieldset {
+        display: flex;
+        gap: 3vw;
+        border: 0.2vw solid var(--cor-texto);
+        padding: 3vw;
+        margin-bottom: 3vw;
+        border-radius: 1vw;
     }
 
-    .container_initial section.introduction .btns {
-        gap: 3.5vw;
-    }
-
-    .container_initial section.introduction .btn_publisher {
-        height: 10vw;
-        padding: 0 2vw;
+    .filtros-favoritos legend {
         font-size: 4vw;
     }
 
-    .container_initial section.imgs_profile_person {
+    .filtros-favoritos label {
+        font-size: 3vw;
+        gap: 1vw;
+    }
+
+    .filtros-favoritos input[type="checkbox"],
+    .filtros-favoritos input[type="radio"] {
+        width: 4vw;
+        height: 4vw;
+    }
+
+    .filtros-favoritos button {
+        padding: 2vw 3vw;
+        border-radius: 1vw;
+        font-size: 3vw;
+    }
+
+    .filtros-favoritos button:hover {
+        background-color: #ff4f4f;
+    }
+
+    hr {
+        border: 0;
+        height: 0.4vw;
+        margin: 0 3vw;
+    }
+
+    /*
+    =========================
+        SEÇÕES: PERSONAGENS
+    =========================
+*/
+    .section_comics {
+        text-align: center;
+    }
+
+    /* Grade de cards */
+    .list_characters {
+        grid-template-columns: 1fr;
+        gap: 3vw 2vw;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Cada card de personagem/equipe/quadrinho */
+    .character {
+        border-radius: 2vw;
+        padding: 1.5vw;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+        /* width: 100%; */
+        max-width: 45vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .character:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+        background-color: var(--cor-destaque);
+    }
+
+    .character_img {
+        aspect-ratio: 4/5;
+    }
+
+    .character p {
+        font-size: 4vw;
+    }
+
+    /*
+    =========================
+        SEÇÕES: EQUIPES
+    =========================
+*/
+    .equipes {
+        grid-template-columns: 1fr;
+        gap: 4vw 3vw;
+    }
+
+    .equipe {
+        max-width: 60vw;
+    }
+
+    .equipe_img {
+        width: 100%;
+        aspect-ratio: 4/3;
+        background-color: #eee;
+        border-radius: 1vw;
+    }
+
+    /* 
+        =========================
+            TABELA DE HQS 
+        =========================
+    */
+    .tabela_scroll {
+        max-height: 200vw;
+    }
+
+    .tabela_scroll::-webkit-scrollbar {
+        width: 1.5vw;
+    }
+
+    .hqs_personagem table {
+        border: 0;
+    }
+
+    .hqs_personagem thead {
         display: none;
     }
 
-    /* 
-        =========================
-            SEÇÕES EM GERAL
-        =========================
-    */
-
-    .section_comics {
-        padding: 5vw;
+    .hqs_personagem tbody tr {
+        display: block;
+        border: 1px solid #444;
+        padding: 3.5vw;
     }
 
-    .section_comics h2 {
-        font-size: 6vw;
-        margin-bottom: 4.5vw;
-    }
-
-    /* 
-        =========================
-            SEGUNDA SEÇÃO: PERSONAGENS
-        =========================
-    */
-    .section_comics .list_characters {
-        grid-template-columns: 1fr;
-        gap: 5vw;
-    }
-
-    .section_comics .list_characters a.character {
-        width: 90%;
-    }
-
-    .section_comics .list_characters a.character .character_img {
-        height: auto;
-        aspect-ratio: 4/3;
-        width: 100%;
-    }
-
-    .section_comics .list_characters a.character .character_name {
-        padding: 3vw;
-        font-size: 4vw;
-    }
-
-    /* 
-        =========================
-            TERCEIRA SEÇÃO: QUADRINHOS
-        =========================
-    */
-    .section_comics .list_comics {
-        grid-template-columns: 1fr;
-        gap: 5vw;
-    }
-
-    .section_comics .list_comics a.comic {
-        width: 70%;
-    }
-
-    .section_comics .list_comics a.comic .comic_img {
-        aspect-ratio: 2 / 3;
-        width: 100%;
-        background-color: antiquewhite;
-        max-width: 450px;
-    }
-
-    .section_comics .list_comics a.comic .comic_description {
-        padding: 4vw 0;
+    .hqs_personagem tbody td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: right;
+        padding: 3vw 0;
+        border-bottom: 1px solid #333;
+        position: relative;
         font-size: 4.5vw;
     }
 
-    .section_comics .list_comics a.comic .comic_description .comic_year {
-        font-size: 3vw;
+    .hqs_personagem tbody td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: var(--cor-destaque);
+        text-align: left;
+    }
+
+    .hqs_personagem .hq_capa {
+        width: 25vw;
+        height: 38vw;
+    }
+
+    .favorite-toggle svg {
+        width: 5vw;
+        height: 5vw;
     }
 
     /* 

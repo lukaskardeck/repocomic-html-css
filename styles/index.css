@@ -238,7 +238,7 @@ header nav ul li a:hover:after {
 */
 .section_comics .list_comics {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     gap: 16px;
 }
@@ -261,6 +261,7 @@ header nav ul li a:hover:after {
 .section_comics .list_comics a.comic .comic_img {
     aspect-ratio: 2 / 3;
     width: 100%;
+    max-width: 250px;
     background-color: antiquewhite;
     background-size: cover;
     background-position: center;
