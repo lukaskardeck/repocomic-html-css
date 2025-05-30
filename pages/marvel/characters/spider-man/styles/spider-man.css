@@ -133,7 +133,6 @@ header nav ul li span.ativo::after {
 /* Seção de introdução */
 .intro_personagem .profile_character {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     margin-bottom: 32px;
 }
@@ -157,39 +156,47 @@ header nav ul li span.ativo::after {
 /* Botão de favoritar - container */
 .add-favorite {
     display: inline-flex;
+    justify-content: center;
+    margin-bottom: 1.5em;
+}
+
+.favorite-character-toggle {
+    display: inline-flex;
     align-items: center;
-    gap: 6px;
-    margin-bottom: 24px;
-}
-
-/* Botão em si */
-.favorite-btn {
-    display: flex;
-    background: none;
-    border: none;
+    gap: 8px;
     cursor: pointer;
-    transition: transform 0.2s ease;
+    user-select: none;
 }
 
-.favorite-btn svg {
-    width: 20px;
-    height: 20px;
-    stroke: var(--cor-texto);
-    stroke-width: 1px;
-    transition: transform 0.2s ease;
+.favorite-character-toggle span.favorite-text {
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.5);
 }
 
-
-.add-favorite:hover {
-    cursor: pointer;
-    color: var(--cor-destaque);
+.favorite-character-toggle:hover {
+    color: #f39c12;
 }
 
-.add-favorite:hover .favorite-btn svg {
-    transform: scale(1.05);
-    stroke: var(--cor-destaque);
+.favorite-character-toggle:hover span.favorite-text {
+    color: #f39c12;
 }
 
+.favorite-character-toggle .star-icon {
+    width: 24px;
+    height: 24px;
+    stroke: rgba(255, 255, 255, 0.5);
+    fill: none;
+}
+
+.favorite-character-toggle:hover .star-icon {
+    stroke: #f39c12;
+    transform: scale(1.1);
+}
+
+.favorite-character-toggle input[type="checkbox"]:checked + .star-icon {
+    fill: #f39c12;
+    stroke: #f39c12;
+}
 
 .intro_personagem > p {
     font-size: 18px;
@@ -243,6 +250,11 @@ header nav ul li span.ativo::after {
     vertical-align: middle;
 }
 
+td.fav-column,
+th.fav-column {
+    text-align: center;
+}
+
 .hqs_personagem thead {
     background-color: var(--cor-secundaria);
     position: sticky;
@@ -267,6 +279,30 @@ header nav ul li span.ativo::after {
     border-radius: 4px;
 }
 
+.favorite-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.favorite-toggle svg {
+    fill: none;
+    stroke: var(--cor-texto);
+    transition: fill 0.3s, stroke 0.3s;
+    cursor: pointer;
+}
+
+.favorite-toggle:hover svg {
+    transform: scale(1.1);
+    stroke: #f39c12;
+}
+
+.favorite-toggle input:checked + svg {
+    fill: #f39c12;
+    stroke: #f39c12;
+}
+
 /* Links */
 .hqs_personagem a {
     color: var(--cor-destaque);
@@ -279,7 +315,6 @@ header nav ul li span.ativo::after {
     color: #ff4f4f;
 }
 
-
 /* 
     =========================
         MOMENTOS QUE MARCARAM
@@ -287,14 +322,14 @@ header nav ul li span.ativo::after {
 */
 
 .moments_section {
-  padding: 4px 16px;
+    padding: 4px 16px;
 }
 
 .moments_section h2 {
-  text-align: center;
-  color: var(--cor-destaque);
-  font-size: 2rem;
-  margin-bottom: 3rem;
+    text-align: center;
+    color: var(--cor-destaque);
+    font-size: 2rem;
+    margin-bottom: 3rem;
 }
 
 .moments_container {
@@ -304,42 +339,40 @@ header nav ul li span.ativo::after {
 }
 
 .moment {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
 }
 
-.moment.reverse .moment_img{
+.moment.reverse .moment_img {
     order: 2;
 }
 
 .moment_img {
-  height: 300px;
-  background-color: var(--cor-texto);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    height: 300px;
+    background-color: var(--cor-texto);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .moment_text {
-  min-width: 300px;
+    min-width: 300px;
 }
 
 .moment_text h3 {
-  font-size: 1.5rem;
-  color: var(--cor-destaque);
-  margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--cor-destaque);
+    margin-bottom: 0.5rem;
 }
 
 .moment_text p {
-  font-size: 1rem;
-  color: var(--cor-texto);
-  line-height: 1.6;
+    font-size: 1rem;
+    color: var(--cor-texto);
+    line-height: 1.6;
 }
-
-
 
 /* 
     =========================

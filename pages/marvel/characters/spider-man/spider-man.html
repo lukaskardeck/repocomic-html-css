@@ -55,19 +55,17 @@
                     <h1>Homem-Aranha</h1>
                 </div>
                 <div class="add-favorite">
-                    <button
-                        class="favorite-btn"
-                        aria-label="Favoritar personagem"
-                        title="Favoritar"
-                    >
+                    <label class="favorite-character-toggle" for="favorite-character">
+                        <input type="checkbox" id="favorite-character" hidden />
                         <svg
+                            class="star-icon"
                             xmlns="http://www.w3.org/2000/svg"
                             width="24"
                             height="24"
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"
-                            stroke-width="2"
+                            stroke-width="1.5"
                             stroke-linecap="round"
                             stroke-linejoin="round"
                         >
@@ -75,9 +73,12 @@
                                 points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
                             ></polygon>
                         </svg>
-                    </button>
-                    <p>Adicionar aos favoritos</p>
+                        <span class="favorite-text"
+                            >Adicionar aos favoritos</span
+                        >
+                    </label>
                 </div>
+
                 <p>
                     Criado por Stan Lee e Steve Ditko em 1962, o Homem-Aranha é
                     o alter ego de Peter Parker, um jovem de Nova York que ganha
@@ -101,8 +102,9 @@
                                 <th>Capa</th>
                                 <th>Título</th>
                                 <th>Ano</th>
-                                <th>Equipe Criativa</th>
+                                <!-- <th>Equipe Criativa</th> -->
                                 <th>Link</th>
+                                <th class="fav-column">Favoritar</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -120,11 +122,32 @@
                                     Homem-Aranha: Origem
                                 </td>
                                 <td data-label="Ano">2000</td>
-                                <td data-label="Equipe Criativa">
+                                <!-- <td data-label="Equipe Criativa">
                                     J. Michael Straczynski & John Romita Jr.
-                                </td>
+                                </td> -->
                                 <td data-label="Link">
                                     <a href="#">Acessar</a>
+                                </td>
+                                <td data-label="Favoritar" class="fav-column">
+                                    <label class="favorite-toggle">
+                                        <input type="checkbox" hidden />
+                                        <svg
+                                            class="star-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                            ></polygon>
+                                        </svg>
+                                    </label>
                                 </td>
                             </tr>
 
@@ -142,11 +165,32 @@
                                     Homem-Aranha: Origem
                                 </td>
                                 <td data-label="Ano">2000</td>
-                                <td data-label="Equipe Criativa">
+                                <!-- <td data-label="Equipe Criativa">
                                     J. Michael Straczynski & John Romita Jr.
-                                </td>
+                                </td> -->
                                 <td data-label="Link">
                                     <a href="#">Acessar</a>
+                                </td>
+                                <td data-label="Favoritar" class="fav-column">
+                                    <label class="favorite-toggle">
+                                        <input type="checkbox" hidden />
+                                        <svg
+                                            class="star-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                            ></polygon>
+                                        </svg>
+                                    </label>
                                 </td>
                             </tr>
 
@@ -164,11 +208,32 @@
                                     Homem-Aranha: Origem
                                 </td>
                                 <td data-label="Ano">2000</td>
-                                <td data-label="Equipe Criativa">
+                                <!-- <td data-label="Equipe Criativa">
                                     J. Michael Straczynski & John Romita Jr.
-                                </td>
+                                </td> -->
                                 <td data-label="Link">
                                     <a href="#">Acessar</a>
+                                </td>
+                                <td data-label="Favoritar" class="fav-column">
+                                    <label class="favorite-toggle">
+                                        <input type="checkbox" hidden />
+                                        <svg
+                                            class="star-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                            ></polygon>
+                                        </svg>
+                                    </label>
                                 </td>
                             </tr>
                         </tbody>

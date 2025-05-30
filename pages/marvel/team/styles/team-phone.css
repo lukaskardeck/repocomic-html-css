@@ -132,7 +132,7 @@
     }
 
     h1 {
-        font-size: 8vw; 
+        font-size: 8vw;
         text-align: center;
         text-shadow: 0.5vw 0.5vw 0 var(--cor-terciaria);
     }
@@ -143,20 +143,22 @@
         box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     }
 
+    /* Botão de favoritar - container */
     .add-favorite {
-        gap: 1vw;
-        margin-bottom: 5vw;
+        margin-bottom: 4vw;
     }
 
-    .favorite-btn svg {
-        width: 4vw;
-        height: 4vw;
-        stroke-width: 0.2vw;
+    .favorite-character-toggle {
+        gap: 2vw;
     }
 
-    /* Texto abaixo do botão */
-    .add-favorite > p {
-        font-size: 3vw;
+    .favorite-character-toggle span.favorite-text {
+        font-size: 4vw;
+    }
+
+    .favorite-character-toggle .star-icon {
+        width: 5vw;
+        height: 5vw;
     }
 
     .intro_team > p {
@@ -211,6 +213,11 @@
     .hqs_personagem .hq_capa {
         width: 25vw;
         height: 38vw;
+    }
+
+    .favorite-toggle svg {
+        width: 5vw;
+        height: 5vw;
     }
 
     /* 

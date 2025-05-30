@@ -164,36 +164,47 @@ h1 {
     margin-bottom: 24px;
 }
 
-/* Botão em si */
-.favorite-btn {
-    display: flex;
-    background: none;
-    border: none;
+/* Botão de favoritar - container */
+.add-favorite {
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 1.5em;
+}
+
+.favorite-character-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     cursor: pointer;
-    transition: transform 0.2s ease;
+    user-select: none;
 }
 
-.favorite-btn svg {
-    width: 20px;
-    height: 20px;
-    stroke: var(--cor-texto);
-    stroke-width: 1px;
-    transition: transform 0.2s ease;
+.favorite-character-toggle span.favorite-text {
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.5);
 }
 
-
-.add-favorite:hover {
-    cursor: pointer;
-    color: var(--cor-destaque);
+.favorite-character-toggle:hover {
+    color: #f39c12;
 }
 
-.add-favorite:hover .favorite-btn svg {
-    transform: scale(1.05);
-    stroke: var(--cor-destaque);
+.favorite-character-toggle:hover span.favorite-text {
+    color: #f39c12;
 }
 
-.add-favorite > p {
-    font-size: 0.9rem;
+.favorite-character-toggle .star-icon {
+    stroke: rgba(255, 255, 255, 0.5);
+    fill: none;
+}
+
+.favorite-character-toggle:hover .star-icon {
+    stroke: #f39c12;
+    transform: scale(1.1);
+}
+
+.favorite-character-toggle input[type="checkbox"]:checked + .star-icon {
+    fill: #f39c12;
+    stroke: #f39c12;
 }
 
 .intro_team > p {
@@ -248,6 +259,11 @@ h1 {
     vertical-align: middle;
 }
 
+td.fav-column,
+th.fav-column {
+    text-align: center;
+}
+
 .hqs_personagem thead {
     background-color: var(--cor-secundaria);
     position: sticky;
@@ -271,6 +287,31 @@ h1 {
     background-position: center;
     border-radius: 4px;
 }
+
+.favorite-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.favorite-toggle svg {
+    fill: none;
+    stroke: var(--cor-texto);
+    transition: fill 0.3s, stroke 0.3s;
+    cursor: pointer;
+}
+
+.favorite-toggle:hover svg{
+    transform: scale(1.1);
+    stroke: #f39c12;
+}
+
+.favorite-toggle input:checked + svg {
+    fill: #f39c12;
+    stroke: #f39c12;
+}
+
 
 /* Links */
 .hqs_personagem a {
