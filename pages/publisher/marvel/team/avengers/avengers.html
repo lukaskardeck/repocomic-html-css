@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300..700&family=Sansation:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../../../../../styles/team/team.css" />
+        <link rel="stylesheet" href="../../../../../styles/team/team-tablet.css" />
+        <link rel="stylesheet" href="../../../../../styles/team/team-phone.css" />
+
+        <title>Vingadores | REPOCOMICS</title>
+    </head>
+    <body>
+        <!-- CABEÇALHO -->
+        <header>
+            <p class="logo_repocomics">
+                <a href="../../../../../index.html">REPOCOMICS</a>
+            </p>
+
+            <!-- Gatilho do menu -->
+            <input type="checkbox" id="menu-toggle" />
+            <label class="hamburger" for="menu-toggle">
+                <span class="hamburger-icon">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </span>
+            </label>
+
+            <nav>
+                <ul>
+                    <li><a href="../../marvel.html">Marvel</a></li>
+                    <li><a href="#">DC Comics</a></li>
+                    <li><a href="../../../../favorites/favorites.html">Favoritos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- FIM DO CABEÇALHO -->
+
+        <figure>
+            <div
+                class="profile_img"
+                style="background-image: url('../avengers/images/image.png')"
+            >
+                <h1>VINGADORES</h1>
+            </div>
+        </figure>
+
+        <main class="page_team">
+            <!-- 1. Apresentação da equipe -->
+            <section class="intro_team">
+                <div class="add-favorite">
+                    <label
+                        class="favorite-character-toggle"
+                        for="favorite-character"
+                    >
+                        <input type="checkbox" id="favorite-character" hidden />
+                        <svg
+                            class="star-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                            ></polygon>
+                        </svg>
+                        <span class="favorite-text"
+                            >Adicionar aos favoritos</span
+                        >
+                    </label>
+                </div>
+                <p>
+                    Os Vingadores são uma equipe de super-heróis formada pela
+                    Marvel Comics em 1963, criada por Stan Lee e Jack Kirby. A
+                    proposta era reunir os maiores heróis da editora em um grupo
+                    para enfrentar ameaças que nenhum deles poderia derrotar
+                    sozinho. A formação original incluía o Homem de Ferro, Thor,
+                    Hulk, Homem-Formiga e a Vespa, com o Capitão América se
+                    juntando pouco depois. Ao longo dos anos, diversos heróis
+                    passaram pela equipe, como a Viúva Negra, Gavião Arqueiro,
+                    Feiticeira Escarlate, Visão, entre muitos outros. Unidos por
+                    um ideal de justiça e pela frase "Vingadores, avante!", o
+                    grupo se tornou um dos maiores ícones da cultura pop e
+                    símbolo de trabalho em equipe diante de desafios épicos.
+                </p>
+            </section>
+
+            <hr />
+
+            <!-- 2. Lista de HQs em formato de tabela -->
+            <section class="hqs_personagem">
+                <h2>Guia de Leitura</h2>
+                <div class="tabela_scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Capa</th>
+                                <th>Título</th>
+                                <th>Ano</th>
+                                <!-- <th>Equipe Criativa</th> -->
+                                <th>Link</th>
+                                <th class="fav-column">Favoritar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="#">1</td>
+                                <td data-label="Capa">
+                                    <div
+                                        class="hq_capa"
+                                        style="
+                                            background-image: url('/assets/images/spidey-origin.jpg');
+                                        "
+                                    ></div>
+                                </td>
+                                <td data-label="Título">
+                                    Homem-Aranha: Origem
+                                </td>
+                                <td data-label="Ano">2000</td>
+                                <!-- <td data-label="Equipe Criativa">
+                                    J. Michael Straczynski & John Romita Jr.
+                                </td> -->
+                                <td data-label="Link">
+                                    <a href="#">Acessar</a>
+                                </td>
+                                <td data-label="Favoritar" class="fav-column">
+                                    <label class="favorite-toggle">
+                                        <input type="checkbox" hidden />
+                                        <svg
+                                            class="star-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                            ></polygon>
+                                        </svg>
+                                    </label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="#">1</td>
+                                <td data-label="Capa">
+                                    <div
+                                        class="hq_capa"
+                                        style="
+                                            background-image: url('/assets/images/spidey-origin.jpg');
+                                        "
+                                    ></div>
+                                </td>
+                                <td data-label="Título">
+                                    Homem-Aranha: Origem
+                                </td>
+                                <td data-label="Ano">2000</td>
+                                <!-- <td data-label="Equipe Criativa">
+                                    J. Michael Straczynski & John Romita Jr.
+                                </td> -->
+                                <td data-label="Link">
+                                    <a href="#">Acessar</a>
+                                </td>
+                                <td data-label="Favoritar" class="fav-column">
+                                    <label class="favorite-toggle">
+                                        <input type="checkbox" hidden />
+                                        <svg
+                                            class="star-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                            ></polygon>
+                                        </svg>
+                                    </label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="#">1</td>
+                                <td data-label="Capa">
+                                    <div
+                                        class="hq_capa"
+                                        style="
+                                            background-image: url('/assets/images/spidey-origin.jpg');
+                                        "
+                                    ></div>
+                                </td>
+                                <td data-label="Título">
+                                    Homem-Aranha: Origem
+                                </td>
+                                <td data-label="Ano">2000</td>
+                                <!-- <td data-label="Equipe Criativa">
+                                    J. Michael Straczynski & John Romita Jr.
+                                </td> -->
+                                <td data-label="Link">
+                                    <a href="#">Acessar</a>
+                                </td>
+                                <td data-label="Favoritar" class="fav-column">
+                                    <label class="favorite-toggle">
+                                        <input type="checkbox" hidden />
+                                        <svg
+                                            class="star-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                            ></polygon>
+                                        </svg>
+                                    </label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <hr />
+
+            <!-- 3. Momentos marcantes e curiosidades -->
+            <section class="moments_section">
+                <h2>Momentos Marcantes & Curiosidades</h2>
+
+                <div class="moments_container">
+                    <div class="moment">
+                        <div
+                            class="moment_img"
+                            style="
+                                background-image: url('imagens/vingadores-nascem.jpg');
+                            "
+                        ></div>
+                        <div class="moment_text">
+                            <h3>O Nascimento dos Vingadores</h3>
+                            <p>
+                                Em *The Avengers #1* (1963), uma ameaça de Loki
+                                leva à união improvável de heróis como Homem de
+                                Ferro, Thor, Hulk, Homem-Formiga e Vespa. Esse
+                                encontro marcaria o início de uma das equipes
+                                mais importantes dos quadrinhos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="moment reverse">
+                        <div
+                            class="moment_img"
+                            style="
+                                background-image: url('imagens/guerra-kree-skrull.jpg');
+                            "
+                        ></div>
+                        <div class="moment_text">
+                            <h3>A Guerra Kree-Skrull</h3>
+                            <p>
+                                Esse épico interestelar publicado entre
+                                *Avengers #89–97* (1971–72) colocou os
+                                Vingadores no centro de um conflito entre duas
+                                raças alienígenas. A saga elevou o escopo das
+                                histórias da equipe e consolidou sua importância
+                                cósmica no universo Marvel.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="moment">
+                        <div
+                            class="moment_img"
+                            style="
+                                background-image: url('imagens/dinastia-m.jpg');
+                            "
+                        ></div>
+                        <div class="moment_text">
+                            <h3>"Sem mais mutantes"</h3>
+                            <p>
+                                Na saga *Dinastia M* (2005), após um colapso
+                                mental de Wanda Maximoff, a Feiticeira Escarlate
+                                altera toda a realidade e, ao final, apaga os
+                                poderes de quase todos os mutantes. Uma das
+                                frases mais impactantes da história dos
+                                quadrinhos: “No more mutants.”
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr />
+
+            <!-- 3. Formulário de sugestão -->
+            <section class="sugestao_hq">
+                <h2>Sentiu falta de alguma HQ?</h2>
+                <form>
+                    <label for="titulo">Título da HQ:</label>
+                    <input type="text" id="titulo" name="titulo" required />
+
+                    <label for="mensagem"
+                        >Nos diga por que ela é importante:</label
+                    >
+                    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+                    <button type="submit">Enviar sugestão</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- RODAPÉ -->
+        <footer>
+            <div class="footer-top">
+                <div class="footer-section">
+                    <h3>REPOCOMICS</h3>
+                    <p>
+                        Um guia feito por um fã para os fãs! Aqui você encontra
+                        sugestões de leitura, cronologias e curiosidades do
+                        universo Marvel e DC.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>CONTATO</h3>
+                    <p>Dúvidas? Sugestões? Mande um e-mail para:</p>
+                    <a href="mailto:lukas.kardeck@gmail.com"
+                        >lukas.kardeck@gmail.com</a
+                    >
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    👨‍💻 Criado por Lukas Kardeck - Programação WEB 2025.1 - UESB
+                    |
+                    <a href="https://github.com/lukaskardeck" target="_blank"
+                        >GitHub</a
+                    >
+                    |
+                    <a
+                        href="https://linkedin.com/in/lukaskardeck"
+                        target="_blank"
+                        >Linkedin</a
+                    >
+                </p>
+            </div>
+        </footer>
+        <!-- FIM DO RODAPÉ -->
+    </body>
+</html>

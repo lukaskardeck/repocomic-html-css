@@ -109,9 +109,7 @@
 
     .container_initial {
         grid-template-columns: 1fr;
-        padding: 3.5vw;
-        margin-top: 4.5vw;
-        margin-bottom: 8vw;
+        padding: 7vw 3.5vw;
     }
 
     .container_initial section.introduction {
@@ -120,6 +118,10 @@
 
     .container_initial section.introduction h1 {
         font-size: 8vw;
+    }
+
+    .container_initial section.introduction h1 span {
+        text-shadow: 0.4vw 0.4vw 0 var(--cor-terciaria);
     }
 
     .container_initial section.introduction p {
@@ -133,7 +135,7 @@
     .container_initial section.introduction .btn_publisher {
         height: 10vw;
         padding: 0 2vw;
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
 
     .container_initial section.imgs_profile_person {

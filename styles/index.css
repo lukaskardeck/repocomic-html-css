@@ -53,7 +53,7 @@ header p.logo_repocomics {
 
 header nav ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     list-style: none;
     text-align: center;
     justify-items: right;
@@ -99,19 +99,29 @@ header nav ul li a:hover:after {
 */
 .container_initial {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 0.9fr 1.1fr;
     gap: 16px;
-    padding: 40px;
-    margin-bottom: 40px;
+    padding: 120px 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url("../images/bg-section-initial.jpg");
+    background-position: bottom;
+    background-size: 100% 170%;
+    /* background-size: cover; */
+    background-blend-mode: multiply;
 }
 
 .container_initial section.introduction {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 64px;
 }
 
 .container_initial section.introduction h1 {
     font-size: 3em;
+}
+
+.container_initial section.introduction h1 span {
+   text-shadow: 2px 2px 0 var(--cor-terciaria);
 }
 
 .container_initial section.introduction .btns {
