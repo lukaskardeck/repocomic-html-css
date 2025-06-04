@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300..700&family=Sansation:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../../../../../styles/team/team.css" />
+        <link
+            rel="stylesheet"
+            href="../../../../../styles/team/team-tablet.css"
+        />
+        <link
+            rel="stylesheet"
+            href="../../../../../styles/team/team-phone.css"
+        />
+
+        <title>Liga da Justiça | REPOCOMICS</title>
+    </head>
+    <body>
+        <!-- CABEÇALHO -->
+        <header>
+            <p class="logo_repocomics">
+                <a href="../../../../../index.html">REPOCOMICS</a>
+            </p>
+
+            <!-- Gatilho do menu -->
+            <input type="checkbox" id="menu-toggle" />
+            <label class="hamburger" for="menu-toggle">
+                <span class="hamburger-icon">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </span>
+            </label>
+
+            <nav>
+                <ul>
+                    <li><a href="../../../marvel/marvel.html">Marvel</a></li>
+                    <li><a href="../../dc_comics.html">DC Comics</a></li>
+                    <li>
+                        <a href="../../../../favorites/favorites.html"
+                            >Favoritos</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- FIM DO CABEÇALHO -->
+
+        <figure>
+            <div
+                class="profile_img"
+                style="background-image: url('./images/justice.png')"
+            >
+                <h1>LIGA DA JUSTIÇA</h1>
+            </div>
+        </figure>
+
+        <main class="page_team">
+            <!-- 1. Apresentação da equipe -->
+            <section class="intro_team">
+                <div class="add-favorite">
+                    <label
+                        class="favorite-character-toggle"
+                        for="favorite-character"
+                    >
+                        <input type="checkbox" id="favorite-character" hidden />
+                        <svg
+                            class="star-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                            ></polygon>
+                        </svg>
+                        <span class="favorite-text"
+                            >Adicionar aos favoritos</span
+                        >
+                    </label>
+                </div>
+                <p>
+                    A Liga da Justiça é uma equipe de super-heróis da DC Comics,
+                    formada em 1960, criada por Gardner Fox. A ideia era reunir
+                    os maiores heróis do universo DC em um grupo capaz de
+                    enfrentar ameaças que nenhum deles poderia enfrentar
+                    sozinho. A formação original incluía Superman, Batman,
+                    Mulher-Maravilha, Flash, Lanterna Verde, Aquaman e o Caçador
+                    de Marte. Com o tempo, a Liga cresceu e passou a contar com
+                    dezenas de heróis, como Arqueiro Verde, Zatanna, Shazam,
+                    Mulher-Gavião e muitos outros. Unidos pela missão de
+                    proteger a Terra (e, às vezes, o próprio multiverso), a Liga
+                    da Justiça se consolidou como um dos maiores símbolos de
+                    heroísmo, trabalho em equipe e esperança na cultura pop.
+                </p>
+            </section>
+
+            <hr />
+
+            <!-- 2. Lista de HQs em formato de tabela -->
+            <section class="hqs_personagem">
+                <h2>Guia de Leitura</h2>
+                <div class="tabela_scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Capa</th>
+                                <th>Título</th>
+                                <th>Ano</th>
+                                <th>Link</th>
+                                <th class="fav-column">Favoritar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="#">1</td>
+                                <td data-label="Capa">
+                                    <div
+                                        class="hq_capa"
+                                        style="
+                                            background-image: url('./images/comics/1-ano-um.png');
+                                        "
+                                    ></div>
+                                </td>
+                                <td data-label="Título">JLA: Ano Um</td>
+                                <td data-label="Ano">1998</td>
+                                <td data-label="Link">
+                                    <a target="_blank" href="#">Acessar</a>
+                                </td>
+                                <td data-label="Favoritar" class="fav-column">
+                                    <label class="favorite-toggle">
+                                        <input type="checkbox" hidden />
+                                        <svg
+                                            class="star-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                            ></polygon>
+                                        </svg>
+                                    </label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="#">2</td>
+                                <td data-label="Capa">
+                                    <div
+                                        class="hq_capa"
+                                        style="
+                                            background-image: url('./images/comics/2-torre-de-babel.png');
+                                        "
+                                    ></div>
+                                </td>
+                                <td data-label="Título">JLA: Torre de Babel</td>
+                                <td data-label="Ano">2000</td>
+                                <td data-label="Link">
+                                    <a target="_blank" href="#">Acessar</a>
+                                </td>
+                                <td data-label="Favoritar" class="fav-column">
+                                    <label class="favorite-toggle">
+                                        <input type="checkbox" hidden />
+                                        <svg
+                                            class="star-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                            ></polygon>
+                                        </svg>
+                                    </label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="#">3</td>
+                                <td data-label="Capa">
+                                    <div
+                                        class="hq_capa"
+                                        style="
+                                            background-image: url('./images/comics/3-crise-infinita.png');
+                                        "
+                                    ></div>
+                                </td>
+                                <td data-label="Título">
+                                    Crise nas Infinitas Terras
+                                </td>
+                                <td data-label="Ano">1985</td>
+                                <td data-label="Link">
+                                    <a target="_blank" href="#">Acessar</a>
+                                </td>
+                                <td data-label="Favoritar" class="fav-column">
+                                    <label class="favorite-toggle">
+                                        <input type="checkbox" hidden />
+                                        <svg
+                                            class="star-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                            ></polygon>
+                                        </svg>
+                                    </label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <hr />
+
+            <!-- 3. Momentos marcantes e curiosidades -->
+            <section class="moments_section">
+                <h2>Momentos Marcantes & Curiosidades</h2>
+
+                <div class="moments_container">
+                    <div class="moment">
+                        <div
+                            class="moment_img"
+                            style="
+                                background-image: url('./images/mente-batman.png');
+                            "
+                        ></div>
+                        <div class="moment_text">
+                            <h3>A Liga apagou a mente do Batman</h3>
+                            <p>
+                                Em "Identity Crisis" (2004), é revelado que a
+                                Liga da Justiça apagou a memória do Batman após
+                                ele se opor à decisão do grupo de fazer o mesmo
+                                com o vilão Doutor Luz. O episódio mostra os
+                                dilemas éticos enfrentados pelos heróis e as
+                                consequências da manipulação mental dentro da
+                                própria equipe.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="moment reverse">
+                        <div
+                            class="moment_img"
+                            style="
+                                background-image: url('./images/flashpoint.png');
+                            "
+                        ></div>
+                        <div class="moment_text">
+                            <h3>Flash reinicia o universo</h3>
+                            <p>
+                                Em "Flashpoint" (2011), Barry Allen volta no
+                                tempo para impedir o assassinato de sua mãe.
+                                Essa decisão altera completamente a linha
+                                temporal, criando uma realidade alternativa
+                                sombria onde a Liga da Justiça nunca existiu. O
+                                caos resultante leva a um reboot completo do
+                                universo DC, dando origem aos *Novos 52*. Um dos
+                                eventos mais impactantes e discutidos da
+                                história moderna da editora.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="moment">
+                        <div
+                            class="moment_img"
+                            style="
+                                background-image: url('./images/metron.png');
+                            "
+                        ></div>
+                        <div class="moment_text">
+                            <h3>Batman sentado na Cadeira de Metrón</h3>
+                            <p>
+                                Em "Justice League #42" (2015), Batman se senta
+                                na Cadeira de Metrón, um artefato cósmico que
+                                concede conhecimento ilimitado. Sua primeira
+                                pergunta? “Qual é o verdadeiro nome do Coringa?”
+                                — e a resposta o deixa em choque. Esse momento
+                                gerou mistério e especulação entre os fãs por
+                                anos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr />
+
+            <!-- 3. Formulário de sugestão -->
+            <section class="sugestao_hq">
+                <h2>Sentiu falta de alguma HQ?</h2>
+                <form>
+                    <label for="titulo">Título da HQ:</label>
+                    <input type="text" id="titulo" name="titulo" required />
+
+                    <label for="mensagem"
+                        >Nos diga por que ela é importante:</label
+                    >
+                    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+                    <button type="submit">Enviar sugestão</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- RODAPÉ -->
+        <footer>
+            <div class="footer-top">
+                <div class="footer-section">
+                    <h3>REPOCOMICS</h3>
+                    <p>
+                        Um guia feito por um fã para os fãs! Aqui você encontra
+                        sugestões de leitura, cronologias e curiosidades do
+                        universo Marvel e DC.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>CONTATO</h3>
+                    <p>Dúvidas? Sugestões? Mande um e-mail para:</p>
+                    <a href="mailto:lukas.kardeck@gmail.com"
+                        >lukas.kardeck@gmail.com</a
+                    >
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    👨‍💻 Criado por Lukas Kardeck - Programação WEB 2025.1 - UESB
+                    |
+                    <a href="https://github.com/lukaskardeck" target="_blank"
+                        >GitHub</a
+                    >
+                    |
+                    <a
+                        href="https://linkedin.com/in/lukaskardeck"
+                        target="_blank"
+                        >Linkedin</a
+                    >
+                </p>
+            </div>
+        </footer>
+        <!-- FIM DO RODAPÉ -->
+    </body>
+</html>

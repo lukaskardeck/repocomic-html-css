@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300..700&family=Sansation:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="../../../../../styles/character/character.css"
+        />
+        <link
+            rel="stylesheet"
+            href="../../../../../styles/character/character-tablet.css"
+        />
+        <link
+            rel="stylesheet"
+            href="../../../../../styles/character/character-phone.css"
+        />
+
+        <title>Batman | REPOCOMICS</title>
+    </head>
+    <body>
+        <!-- CABEÇALHO -->
+        <header>
+            <p class="logo_repocomics">
+                <a href="../../../../../index.html">REPOCOMICS</a>
+            </p>
+
+            <!-- Gatilho do menu -->
+            <input type="checkbox" id="menu-toggle" />
+            <label class="hamburger" for="menu-toggle">
+                <span class="hamburger-icon">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </span>
+            </label>
+
+            <nav>
+                <ul>
+                    <li><a href="../../../marvel/marvel.html">Marvel</a></li>
+                    <li>
+                        <a href="../../dc_comics.html"
+                            >DC Comics</a
+                        >
+                    </li>
+                    <li>
+                        <a href="../../../../favorites/favorites.html"
+                            >Favoritos</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- FIM DO CABEÇALHO -->
+
+        <main class="pagina_personagem">
+            <!-- 1. Apresentação do personagem -->
+            <section class="intro_personagem">
+                <div class="profile_character">
+                    <div
+                        class="profile_img"
+                        style="background-image: url('./images/batman.png')"
+                    ></div>
+                    <h1>Batman</h1>
+                </div>
+                <div class="add-favorite">
+                    <label
+                        class="favorite-character-toggle"
+                        for="favorite-character"
+                    >
+                        <input type="checkbox" id="favorite-character" hidden />
+                        <svg
+                            class="star-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                            ></polygon>
+                        </svg>
+                        <span class="favorite-text"
+                            >Adicionar aos favoritos</span
+                        >
+                    </label>
+                </div>
+
+                <p>
+                    Criado por Bob Kane e Bill Finger em 1939, o Batman é o
+                    alter ego de Bruce Wayne, um bilionário de Gotham City que,
+                    após testemunhar o assassinato de seus pais ainda criança,
+                    jurou combater o crime. Sem superpoderes, ele utiliza sua
+                    inteligência, treinamento físico, tecnologia avançada e medo
+                    como armas para proteger a cidade das sombras.
+                </p>
+            </section>
+
+            <hr />
+
+            <!-- 2. Lista de HQs em formato de tabela -->
+            <section class="hqs_personagem">
+                <h2>Guia de Leitura</h2>
+                <div class="tabela_scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Capa</th>
+                                <th>Título</th>
+                                <th>Ano</th>
+                                <th>Link</th>
+                                <th class="fav-column">Favoritar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="#">1</td>
+                                <td data-label="Capa">
+                                    <div
+                                        class="hq_capa"
+                                        style="
+                                            background-image: url('./images/comics/1-year-one.png');
+                                        "
+                                    ></div>
+                                </td>
+                                <td data-label="Título">
+                                    Batman: Year One
+                                </td>
+                                <td data-label="Ano">1987</td>
+                                <td data-label="Link">
+                                    <a target="_blank" href="https://drive.google.com/drive/folders/1OhaOtimfelX9aMGTeGpl-UGo2403Lk4e">Acessar</a>
+                                </td>
+                                <td data-label="Favoritar" class="fav-column">
+                                    <label class="favorite-toggle">
+                                        <input type="checkbox" hidden />
+                                        <svg
+                                            class="star-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                            ></polygon>
+                                        </svg>
+                                    </label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="#">2</td>
+                                <td data-label="Capa">
+                                    <div
+                                        class="hq_capa"
+                                        style="
+                                            background-image: url('./images/comics/2-the-dark-knight-returns.png');
+                                        "
+                                    ></div>
+                                </td>
+                                <td data-label="Título">
+                                    The Dark Knight Returns
+                                </td>
+                                <td data-label="Ano">1986</td>
+                                <td data-label="Link">
+                                    <a target="_blank" href="https://drive.google.com/drive/folders/14SeIIl7AFjcaPacfbbBMZRt-Yqc0Awkw">Acessar</a>
+                                </td>
+                                <td data-label="Favoritar" class="fav-column">
+                                    <label class="favorite-toggle">
+                                        <input type="checkbox" hidden />
+                                        <svg
+                                            class="star-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                            ></polygon>
+                                        </svg>
+                                    </label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="#">3</td>
+                                <td data-label="Capa">
+                                    <div
+                                        class="hq_capa"
+                                        style="
+                                            background-image: url('./images/comics/3-batman-hus.png');
+                                        "
+                                    ></div>
+                                </td>
+                                <td data-label="Título">
+                                    Batman: Hush
+                                </td>
+                                <td data-label="Ano">2002</td>
+                                <td data-label="Link">
+                                    <a target="_blank" href="https://drive.google.com/drive/folders/1NIxYNxspdum1qO4FHH0KcZYht5N7Kqwz">Acessar</a>
+                                </td>
+                                <td data-label="Favoritar" class="fav-column">
+                                    <label class="favorite-toggle">
+                                        <input type="checkbox" hidden />
+                                        <svg
+                                            class="star-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                            ></polygon>
+                                        </svg>
+                                    </label>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td data-label="#">4</td>
+                                <td data-label="Capa">
+                                    <div
+                                        class="hq_capa"
+                                        style="
+                                            background-image: url('./images/comics/4-killing-joke.png');
+                                        "
+                                    ></div>
+                                </td>
+                                <td data-label="Título">
+                                    Batman: The Killing Joke
+                                </td>
+                                <td data-label="Ano">1988</td>
+                                <td data-label="Link">
+                                    <a target="_blank" href="https://www.hq-now.com/hq-reader/22/batman-a-piada-mortal/chapter/1/page/1">Acessar</a>
+                                </td>
+                                <td data-label="Favoritar" class="fav-column">
+                                    <label class="favorite-toggle">
+                                        <input type="checkbox" hidden />
+                                        <svg
+                                            class="star-icon"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        >
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                                            ></polygon>
+                                        </svg>
+                                    </label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <hr />
+
+            <!-- 3. Momentos marcantes e curiosidades -->
+            <section class="moments_section">
+                <h2>Momentos Marcantes & Curiosidades</h2>
+
+                <div class="moments_container">
+                    <div class="moment">
+                        <div
+                            class="moment_img"
+                            style="
+                                background-image: url('./images/death-jason.png');
+                            "
+                        ></div>
+                        <div class="moment_text">
+                            <h3>A morte de Jason Todd</h3>
+                            <p>
+                                Em "Batman: A Death in the Family" (1988), o
+                                segundo Robin, Jason Todd, é brutalmente
+                                assassinado pelo Coringa. O acontecimento chocou
+                                os leitores, especialmente por ter sido decidido
+                                por votação popular, e deixou cicatrizes
+                                profundas em Batman.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="moment reverse">
+                        <div
+                            class="moment_img"
+                            style="
+                                background-image: url('./images/nightfall.png');
+                            "
+                        ></div>
+                        <div class="moment_text">
+                            <h3>Quebrado por Bane</h3>
+                            <p>
+                                Na saga "Knightfall" (1993), Batman enfrenta
+                                Bane, que o derrota e quebra sua coluna
+                                vertebral. Incapacitado, Bruce Wayne passa o
+                                manto do morcego temporariamente, marcando uma
+                                das fases mais dramáticas e sombrias do
+                                personagem.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="moment">
+                        <div
+                            class="moment_img"
+                            style="
+                                background-image: url('./images/knight.png');
+                            "
+                        ></div>
+                        <div class="moment_text">
+                            <h3>O retorno do Cavaleiro das Trevas</h3>
+                            <p>
+                                Em "The Dark Knight Returns" (1986), de Frank
+                                Miller, um Bruce Wayne envelhecido sai da
+                                aposentadoria para combater o crime em uma
+                                Gotham decadente. A obra redefiniu o Batman como
+                                um símbolo sombrio e implacável, influenciando
+                                gerações.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr />
+
+            <!-- 3. Formulário de sugestão -->
+            <section class="sugestao_hq">
+                <h2>Sentiu falta de alguma HQ?</h2>
+                <form>
+                    <label for="titulo">Título da HQ:</label>
+                    <input type="text" id="titulo" name="titulo" required />
+
+                    <label for="mensagem"
+                        >Nos diga por que ela é importante:</label
+                    >
+                    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+                    <button type="submit">Enviar sugestão</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- RODAPÉ -->
+        <footer>
+            <div class="footer-top">
+                <div class="footer-section">
+                    <h3>REPOCOMICS</h3>
+                    <p>
+                        Um guia feito por um fã para os fãs! Aqui você encontra
+                        sugestões de leitura, cronologias e curiosidades do
+                        universo Marvel e DC.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>CONTATO</h3>
+                    <p>Dúvidas? Sugestões? Mande um e-mail para:</p>
+                    <a href="mailto:lukas.kardeck@gmail.com"
+                        >lukas.kardeck@gmail.com</a
+                    >
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    👨‍💻 Criado por Lukas Kardeck - Programação WEB 2025.1 - UESB
+                    |
+                    <a href="https://github.com/lukaskardeck" target="_blank"
+                        >GitHub</a
+                    >
+                    |
+                    <a
+                        href="https://linkedin.com/in/lukaskardeck"
+                        target="_blank"
+                        >Linkedin</a
+                    >
+                </p>
+            </div>
+        </footer>
+        <!-- FIM DO RODAPÉ -->
+    </body>
+</html>

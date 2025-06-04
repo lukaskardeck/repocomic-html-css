@@ -150,6 +150,7 @@ header nav ul li span.ativo::after {
     height: 250px;
     border-radius: 50%;
     background-size: cover;
+    background-position: center;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
