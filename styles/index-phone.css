@@ -109,15 +109,15 @@
 
     .container_initial {
         grid-template-columns: 1fr;
-        padding: 7vw 3.5vw;
+        padding: 20vw 3.5vw;
     }
 
     .container_initial section.introduction {
-        gap: 6vw;
+        gap: 12vw;
     }
 
     .container_initial section.introduction h1 {
-        font-size: 8vw;
+        font-size: 10vw;
     }
 
     .container_initial section.introduction h1 span {
@@ -129,13 +129,13 @@
     }
 
     .container_initial section.introduction .btns {
-        gap: 3.5vw;
+        gap: 4vw;
     }
 
     .container_initial section.introduction .btn_publisher {
-        height: 10vw;
+        height: 9vw;
         padding: 0 2vw;
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
 
     .container_initial section.imgs_profile_person {
